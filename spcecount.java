@@ -11,17 +11,17 @@ class Ideone
 	{
 		// your code goes here
 		Scanner s=new Scanner(System.in);
-		String sr=s.nextLine();
+		String str=s.nextLine();
 	
 		int len=0;
-		int wordlen=0;
-		len=sr.length();
+		int worlen=0;
+		len=str.length();
 		for(int i=0;i<len;i++)
 		{
 		if(sr.charAt(i)==' ')
-		wordlen++;
+		worlen++;
 		}
-		System.out.println(wordlen);
+		System.out.println(worlen);
 
 	}
 }
