@@ -18,7 +18,7 @@ class Ideone
 		len=str.length();
 		for(int i=0;i<len;i++)
 		{
-		if(sr.charAt(i)==' ')
+		if(str.charAt(i)==' ')
 		worlen++;
 		}
 		System.out.println(worlen);
