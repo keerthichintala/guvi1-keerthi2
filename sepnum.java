@@ -19,16 +19,16 @@ class Ideone
           reversenum = reversenum * 10;
           reversenum = reversenum + n%10;
           n= n/10;
+			 count++;
       }
 
 		while(reversenum>0)
 		{
 			int digit=reversenum%10;
 			System.out.print(digit);
-				if(count!=2)
+				if(count!=(count-1))
 			System.out.print(" ");
 			reversenum=reversenum/10;
-			count++;
 		}
 	}
 }
