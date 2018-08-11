@@ -13,6 +13,7 @@ class Ideone
 		Scanner s=new Scanner(System.in);
 		int n=s.nextInt();
 		int reversenum=0;
+		int count=0;
 		 while( n!= 0 )
       {
           reversenum = reversenum * 10;
@@ -23,8 +24,11 @@ class Ideone
 		while(reversenum>0)
 		{
 			int digit=reversenum%10;
-			System.out.print(digit+" ");
+			System.out.print(digit);
+				if(count!=2)
+			System.out.print(" ");
 			reversenum=reversenum/10;
+			count++;
 		}
 	}
 }
